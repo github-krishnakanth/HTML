@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .box {
+                float: left;
+                width: 50%;
+                height: 300px;
+                padding: 50px;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Equal Height Boxes</h1>
+        <p>Floating boxes with equal heights:</p>
+    <div class="clearfix">
+        <div class="box" style="background-color: chartreuse;">
+            <h2>Box 1</h2>
+            <p>Some content, some content, some content</p>
+        </div>
+        <div class="box" style="background-color: aqua;">
+            <h2>Box 2</h2>
+            <p>Some Content, some content, some content</p>
+            <p>Some Content, some content, some content</p>
+            <p>Some Content, some content, some content</p>
+        </div>
+    </div>
+    </body>
+</html>

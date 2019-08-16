@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <!--<meta http-equiv="refresh" content="15">-->
+        <style>
+            body {background-color: powderblue; font-size: 100%;}
+            p {color: red;}
+        </style>
+        <script>
+            function myFunction(firstName){
+                document.getElementById("id").innerHTML="krishna25642";
+            }
+        </script>
+    </head>
+    <body>
+        <form action="/home.action" method="GET" target="_blank" accept-charset="UTF-8" autocomplete="on" enctype="multipart/form-data" name="info" novalidate oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <fieldset>
+                <legend>Personal Information:</legend>
+                Registration Date: <input type="datetime-local" name="reg_date"/><br/><br/>
+                Previous Registration Information:<br/><br/>
+                Enter a date after 2000-01-01:  <input type="date" name="af_date" min="2000-01-01"><br/>                                                    
+                Enter a date before 2018-11-26:   <input type="date" name="af_date" max="2000-01-01"><br/><br/>                                              
+                User Name: <input type="text" name="username"/><br/><br/>
+                Password: <input type="password" name="password"/><br/><br/>
+                Confirm Password: <input type="text" name="confirmPassword"/><br/><br/>
+                First Name: <input type="text" name="firstName"/><br/><br/>
+                Last Name: <input type="text" name="lastName"/><br/><br/>
+                Gender:<br/>
+                        Male <input type="radio" name="gender" value="male" checked/>   Female <input type="radio" name="gender" value="female"/>    Other <input type="radio" name="gender" value="other"/><br/><br/>
+                Date of Birth: <input type="date" name="dob"/><br/><br/>
+                E-mail: <input type="email" name="email"/><br/><br/>        
+                Course:<br/>
+                <select name="course" size="3" multiple>
+                    <option selected>Select</option>
+                    <option value="core_java">Core Java</option>
+                    <option value="j2ee">J2EE</option>
+                    <option value="hibernate">Hibernate</option>
+                    <option value="spring">Spring</option>
+                    <option value="web_services">Web Services</option>
+                    <option value="restful_services">Restful Services</option>
+                    <option value="realtime_tools">Realtime Tools</option>
+                    <option value="design_patterns">Design Patterns</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="jquery_angular_js">JQuery with Angular js</option>
+                    <optgroup label="Frameworks">
+                            <option value="hibernate">Hibernate</option>
+                            <option value="spring">Spring</option>
+                            <option value="web_services">Web Services</option>
+                            <option value="restful_services">Restful Services</option>
+                            <option value="realtime_tools">Realtime Tools</option>
+                            <option value="design_patterns">Design Patterns</option>
+                    </optgroup>
+                    <optgroup label="UI">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="bootstrap">Bootstrap</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="jquery">JQuery</option>
+                            <option value="angular_js">Angular js</option>                            
+                    </optgroup>
+                </select><br/><br/>
+                Choose Faculty:
+                <input type="checkbox" name="faculty1" value="sriman">Sriman
+                <input type="checkbox" name="faculty2" value="durga">Durga
+                <input type="checkbox" name="faculty3" value="nagoorbabu">Nagoorbabu
+                <input type="checkbox" name="faculty4" value="ramesh">Ramesh
+                <input type="checkbox" name="faculty5" value="mahesh">Mahesh<br/><br/>
+                About You:<br/>
+                <!--<textarea name="about" rows="15" cols="30">Just enter brief information about you...</textarea><br/><br/>-->
+                <textarea name="about" style="width: 200px; height: 200px;">Just enter brief information about you...</textarea><br/><br/>        
+                Student id: <p id="id"></p>
+                <button type="button" onclick="myFunction('krishna')">Click Here!</button><br/><br/>
+                Branch:<br/>
+                <input list="branches" name="branch">
+                <datalist id="branches">
+                    <option selected>Select</option>
+                    <option value="Ameerpet"></option>
+                    <option value="KPHB"></option>
+                    <option value="Madhapur"></option>
+                    <option value="Hitech City"></option>
+                    <option value="Jublee Hills"></option>
+                    <option value="Banjara Hills"></option>
+                </datalist><br/><br/>
+                Rating (Max 105):
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 + 
+                <input type="number" id="b" name="b" value="5">
+                =
+                <output name="x" for="a b"></output><br/><br/>
+                <input type="submit" value="SUBMIT"/>  <input type="reset" value="RESET"/>    
+            </fieldset>
+        </form>
+    </body>
+</html>

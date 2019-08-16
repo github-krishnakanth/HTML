@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div style="text-align: center;">            
+            <video id="aatmavarsham" width="1000" height="1000" controls>
+                <source src="D:\Videos\Kannulatho chusa e lokam.mp4" type="video/mp4">                    
+            </video><br>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+        </div>
+        <script>
+            var myVideo=document.getElementById("aatmavarsham")
+            function playPause(){
+                if(myVideo.paused){
+                    myVideo.play();
+                }else{
+                    myVideo.pause();
+                }
+            }
+            function makeBig(){
+                myVideo.width=1400;
+            }
+            function makeSmall(){
+                myVideo.width=800; 
+            }
+            function makeNormal(){
+                myVideo.width=1000;
+            }
+        </script>
+        <p style="text-align: center;">Video courtesy of <a href="www.google.com/" target="_blank">Dr. Paul Emmanuel and Sis. Nissy Paul</a></p>
+    </body>
+</html>
